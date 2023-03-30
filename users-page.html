@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/icon.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="js/script.js" defer></script>
+
+    <title>Users List</title>
+</head>
+<body>
+    <srction class="section users"> 
+        <div class="section__container">
+            <h2 class="section-title">All Users</h2>
+            <div class="section-description">Some lorem section title description</div>
+            <div class="users__filter">
+                <form class="form-search" action="">
+                    <label for="searchUsers">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px" width="25px">
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#fff" d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"></path>
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#fff" d="M22 22L20 20"></path>
+                        </svg>
+                    </label>
+                    <input class="users-search__input" id="searchUsers" type="text" name="search" placeholder="Search..">
+                </form>
+                <form class="form-sort" action="">
+                    <label for="usersSort">Sort users:</label>
+                    <select class="" id="usersSort">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </form>
+            </div>
+            <div class="users__list">
+                <div class="users-card">
+                    <!-- Если user имеет премимум статус -->
+                    <span class="premium-user"><i class="fa-solid fa-star"></i></span>
+                    <!-- ---------------------------------------- -->
+                    <div class="user-card__avatar">
+                        <img src="./img/A164sMC-FaL-150x150.jpg" alt="">
+                    </div>
+                    <div class="user-card__description">
+                        <a href="#" class="user__link"><span class="online-user"></span>User Name</a>
+                        <div class="user-info">
+                            <div class="location"><span id="locate"><i class="fa-solid fa-location-dot"></i>Льеж</span></div>
+                            <div class="profession"><i class="fa-solid fa-id-card"></i><span id="locate">Frontend Dev</span></div>
+                        </div>
+                        <div class="social-list">
+                            <a class="face-book" href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a class="instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="linked-in" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <p class="user-card__about__user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi optio ex minus iste ipsum illo, quaerat aliquid voluptatibus ad sint, incidunt quos totam porro id eum ullam maxime architecto?</p>
+                        <div class="user-card__buttons">
+                            <a href="#" class="card-btn-add"><i class="fa-solid fa-user-check"></i> Add as Friend</a>
+                            <a href="#" class="card-btn-look"><i class="fa-solid fa-eye"></i> View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="users-card">
+                    <div class="user-card__avatar">
+                        <img src="./img/default-user_1.svg" alt="">
+                    </div>
+                    <div class="user-card__description">
+                        <a href="#" class="user__link">User Name</a>
+                        <div class="user-info">
+                            <div class="location"><span id="locate"><i class="fa-solid fa-location-dot"></i>Брюссель</span></div>
+                            <div class="profession"><i class="fa-solid fa-id-card"></i><span id="locate">Доктор</span></div>
+                        </div>
+                        <div class="social-list">
+                            <a class="face-book" href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a class="instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="linked-in" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <p class="user-card__about__user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi optio ex minus iste ipsum illo, quaerat aliquid voluptatibus ad sint, incidunt quos totam porro id eum ullam maxime architecto?</p>
+                        <div class="user-card__buttons">
+                            <a href="#" class="card-btn-add"><i class="fa-solid fa-user-check"></i> Add as Friend</a>
+                            <a href="#" class="card-btn-look"><i class="fa-solid fa-eye"></i> View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="users-card">
+                    <div class="user-card__avatar">
+                        <img src="./img/A164sMC-FaL-150x150.jpg" alt="">
+                    </div>
+                    <div class="user-card__description">
+                        <a href="#" class="user__link">User Name</a>
+                        <div class="user-info">
+                            <div class="location"><span id="locate"><i class="fa-solid fa-location-dot"></i>Льеж</span></div>
+                            <div class="profession"><i class="fa-solid fa-id-card"></i><span id="locate">Frontend Dev</span></div>
+                        </div>
+                        <div class="social-list">
+                            <a class="face-book" href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a class="instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="linked-in" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <p class="user-card__about__user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi optio ex minus iste ipsum illo, quaerat aliquid voluptatibus ad sint, incidunt quos totam porro id eum ullam maxime architecto?</p>
+                        <div class="user-card__buttons">
+                            <a href="#" class="card-btn-add"><i class="fa-solid fa-user-check"></i> Add as Friend</a>
+                            <a href="#" class="card-btn-look"><i class="fa-solid fa-eye"></i> View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="users-card">
+                    <!-- Если user имеет премимум статус -->
+                    <span class="premium-user"><i class="fa-solid fa-star"></i></span>
+                    <!-- ---------------------------------------- -->
+                    <div class="user-card__avatar">
+                        <img src="./img/A164sMC-FaL-150x150.jpg" alt="">
+                    </div>
+                    <div class="user-card__description">
+                        <a href="#" class="user__link">User Name</a>
+                        <div class="user-info">
+                            <div class="location"><span id="locate"><i class="fa-solid fa-location-dot"></i>Льеж</span></div>
+                            <div class="profession"><i class="fa-solid fa-id-card"></i><span id="locate">Frontend Dev</span></div>
+                        </div>
+                        <div class="social-list">
+                            <a class="face-book" href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a class="instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="linked-in" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <p class="user-card__about__user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi optio ex minus iste ipsum illo, quaerat aliquid voluptatibus ad sint, incidunt quos totam porro id eum ullam maxime architecto?</p>
+                        <div class="user-card__buttons">
+                            <a href="#" class="card-btn-add"><i class="fa-solid fa-user-check"></i> Add as Friend</a>
+                            <a href="#" class="card-btn-look"><i class="fa-solid fa-eye"></i> View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="users-card">
+                    <div class="user-card__avatar">
+                        <img src="./img/default-user_1.svg" alt="">
+                    </div>
+                    <div class="user-card__description">
+                        <a href="#" class="user__link">User Name</a>
+                        <div class="user-info">
+                            <div class="location"><span id="locate"><i class="fa-solid fa-location-dot"></i>Брюссель</span></div>
+                            <div class="profession"><i class="fa-solid fa-id-card"></i><span id="locate">Доктор</span></div>
+                        </div>
+                        <div class="social-list">
+                            <a class="face-book" href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a class="instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="linked-in" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <p class="user-card__about__user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi optio ex minus iste ipsum illo, quaerat aliquid voluptatibus ad sint, incidunt quos totam porro id eum ullam maxime architecto?</p>
+                        <div class="user-card__buttons">
+                            <a href="#" class="card-btn-add"><i class="fa-solid fa-user-check"></i> Add as Friend</a>
+                            <a href="#" class="card-btn-look"><i class="fa-solid fa-eye"></i> View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="users-card">
+                    <div class="user-card__avatar">
+                        <img src="./img/A164sMC-FaL-150x150.jpg" alt="">
+                    </div>
+                    <div class="user-card__description">
+                        <a href="#" class="user__link">User Name</a>
+                        <div class="user-info">
+                            <div class="location"><span id="locate"><i class="fa-solid fa-location-dot"></i>Льеж</span></div>
+                            <div class="profession"><i class="fa-solid fa-id-card"></i><span id="locate">Frontend Dev</span></div>
+                        </div>
+                        <div class="social-list">
+                            <a class="face-book" href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a class="instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="linked-in" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <p class="user-card__about__user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi optio ex minus iste ipsum illo, quaerat aliquid voluptatibus ad sint, incidunt quos totam porro id eum ullam maxime architecto?</p>
+                        <div class="user-card__buttons">
+                            <a href="#" class="card-btn-add"><i class="fa-solid fa-user-check"></i> Add as Friend</a>
+                            <a href="#" class="card-btn-look"><i class="fa-solid fa-eye"></i> View Profile</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="users-look-more">
+                <!-- При нажатии на кнопку догружать 6 юзеров -->
+                <button class="btn">Показать ещё</button>
+            </div>
+        </div>
+    </srction>
+    
+</body>
+</html>
